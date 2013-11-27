@@ -1,0 +1,124 @@
+// Specify the number of available columns
+$grid-columns:          12;
+// Inner padding on each side of a column to create gutters
+$grid-column-padding:   15px;
+// Point at which the floats kick in and horizontally align columns
+$grid-float-breakpoint: 768px;
+
+// mixins for grid
+@mixin box-sizing($box-model) {
+  -webkit-box-sizing: $box-model;
+  -moz-box-sizing: $box-model;
+  box-sizing: $box-model;
+}
+
+@mixin clearfix {
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+@mixin make-row {
+  margin-left: -$grid-column-padding;
+  margin-right: -$grid-column-padding;
+  @include clearfix;
+}
+
+@mixin make-column($columns) {
+  @media (min-width: $grid-float-breakpoint) {
+    float: left;
+    // Calculate width based on number of columns available
+    width: percentage($columns / $grid-columns);
+  }
+  // Prevent columns from collapsing when empty
+  min-height: 1px;
+  // Set inner padding as gutters instead of margin
+  padding-left: $grid-column-padding;
+  padding-right: $grid-column-padding;
+  // Proper box-model (padding doesn't add to width)
+  @include box-sizing(border-box);
+}
+
+@mixin make-column-offset($columns) {
+  @media (min-width: $grid-float-breakpoint) {
+    margin-left: percentage($columns / $grid-columns);
+  }
+}
+
+@mixin center-block {
+  display: block;
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+// classes to be used for grid
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+  @include clearfix;
+}
+
+.row {
+  @include make-row;
+}
+
+.grid-12 {
+  @include make-column(12);
+}
+
+.grid-11 {
+  @include make-column(11);
+}
+
+.grid-10 {
+  @include make-column(10);
+}
+
+.grid-9 {
+  @include make-column(9);
+}
+
+.grid-8 {
+  @include make-column(8);
+}
+
+.grid-7 {
+  @include make-column(7);
+}
+
+.grid-6 {
+  @include make-column(6);
+}
+
+.grid-5 {
+  @include make-column(5);
+}
+
+.grid-4 {
+  @include make-column(4);
+}
+
+.grid-3 {
+  @include make-column(3);
+}
+
+.grid-2 {
+  @include make-column(2);
+}
+
+.grid-1 {
+  @include make-column(1);
+}
+
+.centered {
+  @include center-block;
+}
