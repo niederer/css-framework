@@ -24,8 +24,6 @@ $grid-float-breakpoint: 768px;
 }
 
 @mixin make-row {
-  margin-left: -$grid-column-padding;
-  margin-right: -$grid-column-padding;
   @include clearfix;
 }
 
@@ -62,8 +60,6 @@ $grid-float-breakpoint: 768px;
 .container {
   margin-left: auto;
   margin-right: auto;
-  padding-right: 20px;
-  padding-left: 20px;
   @include clearfix;
 }
 
