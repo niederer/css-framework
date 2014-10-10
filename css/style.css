@@ -1,4 +1,4 @@
-/* normalize.css v2.1.2 | MIT License | git.io/normalize */
+/*! normalize.css v2.1.2 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
    ========================================================================== */
@@ -199,7 +199,7 @@ figure {
  * Define consistent border, margin, and padding.
  */
 fieldset {
-  border: 1px solid silver;
+  border: 1px solid #c0c0c0;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em; }
 
@@ -350,7 +350,7 @@ table {
   .row:after {
     clear: both; }
 
-.grid-12 {
+.grid-1 {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
@@ -358,117 +358,9 @@ table {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
   @media (min-width: 768px) {
-    .grid-12 {
+    .grid-1 {
       float: left;
-      width: 100%; } }
-
-.grid-11 {
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
-  @media (min-width: 768px) {
-    .grid-11 {
-      float: left;
-      width: 91.66667%; } }
-
-.grid-10 {
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
-  @media (min-width: 768px) {
-    .grid-10 {
-      float: left;
-      width: 83.33333%; } }
-
-.grid-9 {
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
-  @media (min-width: 768px) {
-    .grid-9 {
-      float: left;
-      width: 75%; } }
-
-.grid-8 {
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
-  @media (min-width: 768px) {
-    .grid-8 {
-      float: left;
-      width: 66.66667%; } }
-
-.grid-7 {
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
-  @media (min-width: 768px) {
-    .grid-7 {
-      float: left;
-      width: 58.33333%; } }
-
-.grid-6 {
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
-  @media (min-width: 768px) {
-    .grid-6 {
-      float: left;
-      width: 50%; } }
-
-.grid-5 {
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
-  @media (min-width: 768px) {
-    .grid-5 {
-      float: left;
-      width: 41.66667%; } }
-
-.grid-4 {
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
-  @media (min-width: 768px) {
-    .grid-4 {
-      float: left;
-      width: 33.33333%; } }
-
-.grid-3 {
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
-  @media (min-width: 768px) {
-    .grid-3 {
-      float: left;
-      width: 25%; } }
+      width: 8.33333%; } }
 
 .grid-2 {
   min-height: 1px;
@@ -482,7 +374,7 @@ table {
       float: left;
       width: 16.66667%; } }
 
-.grid-1 {
+.grid-3 {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
@@ -490,9 +382,117 @@ table {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
   @media (min-width: 768px) {
-    .grid-1 {
+    .grid-3 {
       float: left;
-      width: 8.33333%; } }
+      width: 25%; } }
+
+.grid-4 {
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+  @media (min-width: 768px) {
+    .grid-4 {
+      float: left;
+      width: 33.33333%; } }
+
+.grid-5 {
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+  @media (min-width: 768px) {
+    .grid-5 {
+      float: left;
+      width: 41.66667%; } }
+
+.grid-6 {
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+  @media (min-width: 768px) {
+    .grid-6 {
+      float: left;
+      width: 50%; } }
+
+.grid-7 {
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+  @media (min-width: 768px) {
+    .grid-7 {
+      float: left;
+      width: 58.33333%; } }
+
+.grid-8 {
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+  @media (min-width: 768px) {
+    .grid-8 {
+      float: left;
+      width: 66.66667%; } }
+
+.grid-9 {
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+  @media (min-width: 768px) {
+    .grid-9 {
+      float: left;
+      width: 75%; } }
+
+.grid-10 {
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+  @media (min-width: 768px) {
+    .grid-10 {
+      float: left;
+      width: 83.33333%; } }
+
+.grid-11 {
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+  @media (min-width: 768px) {
+    .grid-11 {
+      float: left;
+      width: 91.66667%; } }
+
+.grid-12 {
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+  @media (min-width: 768px) {
+    .grid-12 {
+      float: left;
+      width: 100%; } }
 
 .centered {
   display: block;
@@ -501,18 +501,22 @@ table {
   margin-right: auto;
   text-align: center; }
 
+html {
+  font-size: 100%; }
+  html body {
+    font-size: 14px;
+    line-height: 20px; }
+
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  line-height: 20px;
+  background-color: white;
   color: #333333;
-  background-color: white; }
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 a {
-  color: #0088cc;
+  color: #1188bd;
   text-decoration: none; }
 
 a:hover,
 a:focus {
-  color: #005580;
+  color: #0b5577;
   text-decoration: underline; }

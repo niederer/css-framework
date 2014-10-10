@@ -71,52 +71,10 @@ $grid-float-breakpoint: 768px;
   @include make-row;
 }
 
-.grid-12 {
-  @include make-column(12);
-}
-
-.grid-11 {
-  @include make-column(11);
-}
-
-.grid-10 {
-  @include make-column(10);
-}
-
-.grid-9 {
-  @include make-column(9);
-}
-
-.grid-8 {
-  @include make-column(8);
-}
-
-.grid-7 {
-  @include make-column(7);
-}
-
-.grid-6 {
-  @include make-column(6);
-}
-
-.grid-5 {
-  @include make-column(5);
-}
-
-.grid-4 {
-  @include make-column(4);
-}
-
-.grid-3 {
-  @include make-column(3);
-}
-
-.grid-2 {
-  @include make-column(2);
-}
-
-.grid-1 {
-  @include make-column(1);
+@for $i from 1 through 12 {
+  .grid-#{$i} {
+    @include make-column($i);
+  }
 }
 
 .centered {
