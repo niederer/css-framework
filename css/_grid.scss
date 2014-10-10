@@ -4,6 +4,8 @@ $grid-columns:          12;
 $grid-column-padding:   15px;
 // Point at which the floats kick in and horizontally align columns
 $grid-float-breakpoint: 768px;
+// max-width for the layout so it doesn't get out of control on large screens
+$container-max: 1500px;
 
 // mixins for grid
 @mixin box-sizing($box-model) {
@@ -60,6 +62,7 @@ $grid-float-breakpoint: 768px;
 .container {
   margin-left: auto;
   margin-right: auto;
+  max-width: $container-max;
   @include clearfix;
 }
 
