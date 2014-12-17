@@ -70,7 +70,7 @@ $container-max: 1500px;
   @include make-row;
 }
 
-@for $i from 1 through 12 {
+@for $i from 1 through $grid-columns {
   .grid-#{$i} {
     @include make-column($i);
   }
