@@ -1,3 +1,6 @@
+// Not grid-related mixins live here
+
+// Cross-browser placeholder text color
 @mixin input-placeholder($color) {
   &.placeholder {
     color: $color;

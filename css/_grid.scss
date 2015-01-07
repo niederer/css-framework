@@ -1,19 +1,20 @@
-// Specify the number of available columns
+// Number of available columns
 $grid-columns:          12;
-// Inner padding on each side of a column to create gutters
-$grid-column-padding:   15px;
-// Point at which the floats kick in and horizontally align columns
-$grid-float-breakpoint: 768px;
-// max-width for the layout so it doesn't get out of control on large screens
-$container-max: 1500px;
+// Gutter size
+$gutter-size:   15px;
+// Breakpoint for when columns begin floating
+$breakpoint: 768px;
+// Max-width for the layout so it doesn't get out of control on large screens
+$container-max:         1500px;
 
-// mixins for grid
+// Mixins for grid
 @mixin box-sizing($box-model) {
   -webkit-box-sizing: $box-model;
   -moz-box-sizing: $box-model;
   box-sizing: $box-model;
 }
 
+// Clear floats
 @mixin clearfix {
   &:before,
   &:after {
@@ -30,26 +31,28 @@ $container-max: 1500px;
 }
 
 @mixin make-column($columns) {
-  @media (min-width: $grid-float-breakpoint) {
+  @media (min-width: $breakpoint) {
     float: left;
-    // Calculate width based on number of columns available
+    // Calculate width based on number of columns specified
     width: percentage($columns / $grid-columns);
   }
-  // Prevent columns from collapsing when empty
+  // Columns won't collapse if empty
   min-height: 1px;
-  // Set inner padding as gutters instead of margin
-  padding-left: $grid-column-padding;
-  padding-right: $grid-column-padding;
+  // Gutters
+  padding-left: $gutter-size;
+  padding-right: $gutter-size;
   // Proper box-model (padding doesn't add to width)
   @include box-sizing(border-box);
 }
 
-@mixin make-column-offset($columns) {
-  @media (min-width: $grid-float-breakpoint) {
-    margin-left: percentage($columns / $grid-columns);
+// Offset by x amount of offset columns
+@mixin make-column-offset($offset-columns) {
+  @media (min-width: $breakpoint) {
+    margin-left: percentage($offset-columns / $grid-columns);
   }
 }
 
+// @include center-block for instantly centered content
 @mixin center-block {
   display: block;
   float: none;
@@ -58,7 +61,7 @@ $container-max: 1500px;
   text-align: center;
 }
 
-// classes to be used for grid
+// Utility classes
 .container {
   margin-left: auto;
   margin-right: auto;
