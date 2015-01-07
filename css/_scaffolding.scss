@@ -2,17 +2,13 @@
 // -------------------------
 html {
   font-size: 100%;
-  body {
-    font-size: $baseFontSize;
-    line-height: $baseLineHeight;
-  }
 }
-
-// body reset
 body {
   background-color: $bodyBackground;
   color: $textColor;
   font-family: $baseFontFamily;
+  font-size: $baseFontSize;
+  line-height: $baseLineHeight;
 }
 
 // Links
